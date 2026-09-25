@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronny Montás | Portafolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 19px;
+            color: #d1d5db;
+        }
+
+        nav {
+            background: #1f2937;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #111827;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: #e5e7eb;
+            padding: 10px 18px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .project {
+            border-left: 5px solid #2563eb;
+            padding: 20px;
+            margin-top: 20px;
+            background: #f9fafb;
+            border-radius: 8px;
+        }
+
+        .project h3 {
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            background: #111827;
+            color: white;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            section {
+                margin: 20px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ronny Montás</h1>
+        <p>Estudiante de Ingeniería de Software | Desarrollador en formación</p>
+    </header>
+
+    <nav>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+
+        <p>
+            Soy estudiante de Ingeniería de Software con interés en el desarrollo
+            de aplicaciones y sistemas. Me gusta aprender nuevas tecnologías,
+            resolver problemas y desarrollar proyectos que me permitan fortalecer
+            mis conocimientos en programación y bases de datos.
+        </p>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+
+        <div class="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">SQL</span>
+            <span class="skill">SQL Server</span>
+            <span class="skill">Excel</span>
+            <span class="skill">Power BI</span>
+            <span class="skill">GitHub</span>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+
+        <div class="project">
+            <h3>Sistema de Inventario y Ventas</h3>
+
+            <p>
+                Proyecto desarrollado utilizando SQL Server para la gestión
+                de productos, categorías, proveedores, clientes y ventas.
+            </p>
+
+            <p><strong>Tecnologías:</strong> SQL Server, SQL, procedimientos almacenados,
+            triggers, vistas, roles y permisos.</p>
+        </div>
+
+        <div class="project">
+            <h3>Prácticas de Bases de Datos</h3>
+
+            <p>
+                Desarrollo de ejercicios y prácticas relacionadas con bases de
+                datos, incluyendo consultas SQL, JOIN, procedimientos,
+                transacciones, optimización y seguridad.
+            </p>
+
+            <p><strong>Tecnologías:</strong> SQL Server y SQL.</p>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+
+        <p>
+            Puedes contactarme para conocer más sobre mis proyectos,
+            habilidades y experiencia.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Ronny Montás - Portafolio Personal</p>
+    </footer>
+
+</body>
+</html>
