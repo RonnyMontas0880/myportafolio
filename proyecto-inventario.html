@@ -7,11 +7,16 @@
     <title>Sistema de Inventario y Ventas | Ronny Montás</title>
 
     <style>
-        body {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: Arial, sans-serif;
+        }
+
+        body {
             background: #f4f6f8;
             color: #222;
-            margin: 0;
             line-height: 1.6;
         }
 
@@ -23,11 +28,17 @@
         }
 
         header h1 {
+            font-size: 38px;
             margin-bottom: 10px;
         }
 
+        header p {
+            font-size: 18px;
+            color: #d1d5db;
+        }
+
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 40px auto;
             padding: 30px;
             background: white;
@@ -37,8 +48,23 @@
 
         h2 {
             color: #111827;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 28px;
             border-bottom: 2px solid #2563eb;
             padding-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
         }
 
         .technologies {
@@ -55,10 +81,22 @@
             font-weight: bold;
         }
 
+        .screenshot-container {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .screenshot {
+            width: 100%;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
         .back {
             display: inline-block;
-            margin-top: 25px;
-            padding: 12px 20px;
+            margin-top: 30px;
+            padding: 12px 24px;
             background: #2563eb;
             color: white;
             text-decoration: none;
@@ -69,15 +107,40 @@
         .back:hover {
             background: #1d4ed8;
         }
+
+        footer {
+            text-align: center;
+            background: #111827;
+            color: white;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            .container {
+                margin: 20px 10px;
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 
 <body>
 
     <header>
+
         <h1>Sistema de Inventario y Ventas</h1>
-        <p>Proyecto académico desarrollado con SQL Server</p>
+
+        <p>
+            Proyecto académico desarrollado con SQL Server
+        </p>
+
     </header>
+
 
     <div class="container">
 
@@ -90,41 +153,86 @@
             relacionada con productos, categorías, proveedores, clientes y ventas.
         </p>
 
+
         <h2>Funcionalidades</h2>
 
         <ul>
+
             <li>Gestión de productos y categorías.</li>
+
             <li>Registro de proveedores y clientes.</li>
+
             <li>Registro y control de ventas.</li>
+
             <li>Consultas utilizando JOIN y GROUP BY.</li>
+
             <li>Procedimientos almacenados.</li>
+
             <li>Vistas para consultar información.</li>
+
             <li>Triggers para auditoría.</li>
+
             <li>Transacciones y validaciones.</li>
+
             <li>Roles y permisos de seguridad.</li>
+
             <li>Optimización mediante índices.</li>
+
         </ul>
+
+
+        <h2>Vista de la base de datos</h2>
+
+        <p>
+            En esta captura se muestra la estructura principal de las tablas
+            utilizadas en el sistema de inventario y ventas.
+        </p>
+
+        <div class="screenshot-container">
+
+            <img
+                src="tablas-sistema-inventario.png"
+                alt="Tablas del Sistema de Inventario y Ventas"
+                class="screenshot"
+            >
+
+        </div>
+
 
         <h2>Tecnologías utilizadas</h2>
 
         <div class="technologies">
+
             <span class="tag">SQL</span>
+
             <span class="tag">SQL Server</span>
+
             <span class="tag">JOIN</span>
+
+            <span class="tag">GROUP BY</span>
+
             <span class="tag">Procedimientos almacenados</span>
+
             <span class="tag">Triggers</span>
+
             <span class="tag">Vistas</span>
+
             <span class="tag">Transacciones</span>
+
             <span class="tag">Seguridad</span>
+
+            <span class="tag">Índices</span>
+
         </div>
+
 
         <h2>Sobre el proyecto</h2>
 
         <p>
             Este proyecto forma parte de mi experiencia académica y práctica
             trabajando con bases de datos. Me permitió aplicar conocimientos
-            de SQL Server y comprender mejor cómo estructurar y administrar
-            la información de un sistema.
+            de SQL Server y comprender mejor cómo estructurar, consultar y
+            administrar la información de un sistema.
         </p>
 
         <p>
@@ -132,11 +240,21 @@
             el código fuente completo no se encuentra publicado.
         </p>
 
+
         <a href="index.html" class="back">
             ← Volver al portafolio
         </a>
 
     </div>
+
+
+    <footer>
+
+        <p>
+            © 2026 Ronny Montás - Portafolio Personal
+        </p>
+
+    </footer>
 
 </body>
 </html>
