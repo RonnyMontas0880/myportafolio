@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -24,6 +25,15 @@
             color: white;
             text-align: center;
             padding: 60px 20px;
+        }
+
+        .profile-photo {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid white;
         }
 
         header h1 {
@@ -97,6 +107,33 @@
             margin-bottom: 8px;
         }
 
+        .cv-container {
+            text-align: center;
+        }
+
+        .cv-image {
+            width: 100%;
+            max-width: 700px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        .cv-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .cv-button:hover {
+            background: #1d4ed8;
+        }
+
         footer {
             text-align: center;
             background: #111827;
@@ -118,6 +155,11 @@
             section {
                 margin: 20px 10px;
             }
+
+            .profile-photo {
+                width: 130px;
+                height: 130px;
+            }
         }
     </style>
 </head>
@@ -125,46 +167,63 @@
 <body>
 
     <header>
+
+        <img src="ronny.jpn" alt="Foto de Ronny Montás" class="profile-photo">
+
         <h1>Ronny Montás</h1>
-        <p>Estudiante de Ingeniería de Software | Desarrollador en formación</p>
+
+        <p>
+            Estudiante de Ingeniería de Software | Desarrollador en formación
+        </p>
+
     </header>
 
     <nav>
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#habilidades">Habilidades</a>
         <a href="#proyectos">Proyectos</a>
+        <a href="#cv">CV</a>
         <a href="#contacto">Contacto</a>
     </nav>
 
     <section id="sobre-mi">
+
         <h2>Sobre mí</h2>
 
         <p>
             Soy estudiante de Ingeniería de Software con interés en el desarrollo
-            de aplicaciones y sistemas. Me gusta aprender nuevas tecnologías,
-            resolver problemas y desarrollar proyectos que me permitan fortalecer
-            mis conocimientos en programación y bases de datos.
+            de aplicaciones, sistemas y bases de datos. Me gusta aprender nuevas
+            tecnologías, resolver problemas y desarrollar proyectos que me permitan
+            fortalecer mis conocimientos y adquirir experiencia práctica.
         </p>
+
     </section>
 
     <section id="habilidades">
+
         <h2>Habilidades</h2>
 
         <div class="skills">
+
             <span class="skill">HTML</span>
             <span class="skill">CSS</span>
             <span class="skill">SQL</span>
             <span class="skill">SQL Server</span>
+            <span class="skill">JOIN</span>
             <span class="skill">Excel</span>
             <span class="skill">Power BI</span>
             <span class="skill">GitHub</span>
+
         </div>
+
     </section>
 
     <section id="proyectos">
+
         <h2>Proyectos</h2>
 
         <div class="project">
+
             <h3>Sistema de Inventario y Ventas</h3>
 
             <p>
@@ -172,11 +231,15 @@
                 de productos, categorías, proveedores, clientes y ventas.
             </p>
 
-            <p><strong>Tecnologías:</strong> SQL Server, SQL, procedimientos almacenados,
-            triggers, vistas, roles y permisos.</p>
+            <p>
+                <strong>Tecnologías:</strong> SQL Server, SQL, procedimientos
+                almacenados, triggers, vistas, roles y permisos.
+            </p>
+
         </div>
 
         <div class="project">
+
             <h3>Prácticas de Bases de Datos</h3>
 
             <p>
@@ -185,22 +248,64 @@
                 transacciones, optimización y seguridad.
             </p>
 
-            <p><strong>Tecnologías:</strong> SQL Server y SQL.</p>
+            <p>
+                <strong>Tecnologías:</strong> SQL Server y SQL.
+            </p>
+
         </div>
+
+    </section>
+
+    <section id="cv">
+
+        <h2>Currículum Vitae</h2>
+
+        <div class="cv-container">
+
+            <p>
+                Puedes consultar mi currículum para conocer más sobre mi
+                formación, habilidades y experiencia.
+            </p>
+
+            <img
+                src="mi%20cv.jpeg"
+                alt="Currículum Vitae de Ronny Montás"
+                class="cv-image"
+            >
+
+            <br>
+
+            <a
+                href="mi%20cv.jpeg"
+                target="_blank"
+                class="cv-button"
+            >
+                Ver CV completo
+            </a>
+
+        </div>
+
     </section>
 
     <section id="contacto">
+
         <h2>Contacto</h2>
 
         <p>
             Puedes contactarme para conocer más sobre mis proyectos,
-            habilidades y experiencia.
+            habilidades y formación profesional.
         </p>
+
     </section>
 
     <footer>
-        <p>© 2026 Ronny Montás - Portafolio Personal</p>
+
+        <p>
+            © 2026 Ronny Montás - Portafolio Personal
+        </p>
+
     </footer>
 
 </body>
 </html>
+```
